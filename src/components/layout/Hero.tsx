@@ -3,6 +3,7 @@
 import HeroMetadata from './HeroMetaData'
 import {motion} from 'motion/react'
 import { fadeUp, staggerContainer } from '../animations/variantAnimations'
+import { ArrowRight } from 'lucide-react'
 
 
 export default function Hero() {
@@ -10,7 +11,7 @@ export default function Hero() {
     <div style={{backgroundImage: "url('fondoc.jpg')"}}>
     <div className='mx-auto w-full max-w-7xl px-4'>
     <section className='grid grid-cols-1 md:grid-cols-2 items-center gap-10 min-h-screen p-4'>
-      <motion.article className='flex flex-col gap-2 mt-16 md:mt-2' variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{once: true}}>
+      <motion.article className='flex flex-col gap-2 mt-8 md:mt-2' variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{once: true}}>
         <HeroMetadata />
         <motion.h4 className='font-mono text-xl text-gray-200' variants={fadeUp}>Hi, I`m David Rengifo</motion.h4>
 
@@ -18,8 +19,16 @@ export default function Hero() {
 
         <motion.p variants={fadeUp} className='font-mono text-gray-200 md:text-3xl'>NO SOLO CONSTRUYO SOLUCIONES, SIEMPRE BUSCO NUEVAS FORMAS DE HACERLAS MEJORES.</motion.p>
 
-        <motion.div variants={fadeUp} className='flex gap-2'>
-            <button className='bg-white/10 p-4 border rounded-xl text-gray-200 font-mono'>Ver CV</button>
+        <motion.div variants={fadeUp} className="flex gap-2">
+            <a
+                href="/CV-David.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 p-4 font-mono text-gray-200 transition hover:bg-white/20"
+            >
+                Ver CV <ArrowRight />
+            </a>
+            
         </motion.div>
       </motion.article>
 

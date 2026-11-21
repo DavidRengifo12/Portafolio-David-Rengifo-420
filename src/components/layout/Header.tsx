@@ -10,11 +10,11 @@ export default function Header() {
   const[openMenu, setOpenMenu] = useState(false)
 
   const HeaderNavigation = [
-    {href: 'home', label:'Home'},
+    {href: '/', label:'Home'},
     {href: 'projects', label:'Projects'},
     {href: 'about', label:'About'},
     {href: 'skills', label:'Skills'},
-    {href: 'contacts', label:'Contact me'},
+    {href: 'contacme', label:'Contactme'},
 
     {href: '', label:''},
 ]

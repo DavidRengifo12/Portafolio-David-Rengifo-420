@@ -1,11 +1,12 @@
-//DATA NABVAR
+export interface NavigationItem {
+  id: string
+  label: string
+}
 
-const HeaderNavigation = [
-    {href: 'home', label:'Home'},
-    {href: 'projects', label:'Projects'},
-    {href: 'about', label:'About'},
-    {href: 'contacts', label:'Contact me'},
-    {href: 'skills', label:'Skills'},
-
-    {href: '', label:''},
+export const navigation: NavigationItem[] = [
+  { id: "home", label: "Home" },
+  { id: "projects", label: "Projects" },
+  { id: "about", label: "About" },
+  { id: "skills", label: "Skills" },
+  { id: "contactme", label: "Contact me" },
 ]

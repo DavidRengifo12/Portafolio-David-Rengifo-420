@@ -1,13 +1,13 @@
-import Header from "../components/layout/Header"
+
 import Hero from "../components/layout/Hero";
+import SidebarContacts from "../components/layout/SidebarContacts";
 
 export default function Home() {
 
   return (
     <div >
-      <Header />
       <Hero />
-      
+      <SidebarContacts />
     </div>
   );
 }
