@@ -13,7 +13,7 @@ export default function FormField({
 }: FormFieldProps) {
   return (
     <div className="flex flex-col gap-2">
-      <label htmlFor={name} className="text-white font-mono">
+      <label htmlFor={name} className="text-foreground font-mono">
         {label}
       </label>
 
@@ -22,7 +22,7 @@ export default function FormField({
         name={name}
         type={type}
         placeholder={placeholder}
-        className="rounded-lg p-3 bg-white/10 border border-white/20 text-white font-mono"
+        className="rounded-lg p-3 bg-white/10 border text-foreground font-mono"
       />
     </div>
   );

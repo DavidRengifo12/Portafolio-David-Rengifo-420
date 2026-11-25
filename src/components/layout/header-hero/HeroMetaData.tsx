@@ -63,7 +63,7 @@ export default function HeroMetadata() {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="flex flex-col gap-1 font-mono text-xs text-neutral-400"
+      className="flex flex-col gap-1 font-mono text-sm text-foreground font-semibold"
     >
       <motion.p variants={itemVariants}>
         LOCAL TIME: {time}
