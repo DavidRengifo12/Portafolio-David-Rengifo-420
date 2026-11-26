@@ -100,7 +100,7 @@ const cardInfo = [
 
 export default function HabilidadesMe() {
   return (
-    <div className='flex flex-col justify-center items-center min-h-screen py-2 lg:py-20'>
+    <div className='flex flex-col justify-center items-center min-h-screen py-2 lg:py-20 pt-12'>
         <div className="mx-auto max-w-5xl px-6">
 
           <div className="flex flex-col items-center text-center mb-2 md:mb-6">
