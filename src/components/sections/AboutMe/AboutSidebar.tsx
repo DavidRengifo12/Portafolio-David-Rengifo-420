@@ -38,7 +38,7 @@ export const AboutSidebar: React.FC<AboutSidebarProps> = ({
             aria-current={isActive ? 'page' : undefined}
             className={`group relative flex items-center justify-between gap-3 px-4 py-3.5 sm:px-5 sm:py-4 rounded-2xl border text-left transition-all duration-300 shrink-0 lg:shrink cursor-pointer ${
               isActive
-                ? ' border-blue-600/80  text-foreground'
+                ? '  text-foreground'
                 : ' border border-border text-foreground hover:border-white/25 '
             }`}
           >

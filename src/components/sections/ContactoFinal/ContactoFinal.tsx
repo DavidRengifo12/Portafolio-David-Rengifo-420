@@ -18,7 +18,7 @@ import Contacto from "../../layout/contacto/Contacto"
     icon: FaLinkedin,
     name: "LinkedIn",
     description: "@DavidSantiagoRengifo",
-    href: "https://linkedin.com/in/TU_USUARIO",
+    href: "https://www.linkedin.com/in/david-santiago-rengifo-guacheta-32823b428/",
   },
   {
     id: 3,

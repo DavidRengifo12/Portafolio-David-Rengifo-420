@@ -8,6 +8,7 @@ import { motion } from "motion/react";
 import { contactFormData, formSchemass } from "@/src/schema/FormSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 export default function Contacto() {
 
@@ -37,15 +38,15 @@ export default function Contacto() {
         }
       );
 
-      alert("¡Mensaje enviado correctamente!");
+      toast.success("¡Mensaje enviado correctamente!")
 
       reset();
 
-    } catch (error) {
+    } catch {
 
-      console.error("Error al enviar el mensaje:", error);
+      //console.error("Error al enviar el mensaje:", error);
 
-      alert("No se pudo enviar el mensaje. Inténtalo nuevamente.");
+      toast.error("No se pudo enviar el mensaje. Inténtalo nuevamente.");
 
     }
   };

@@ -3,6 +3,7 @@ import { Space_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "../provider/ThemeProvider";
 import MainLayout from "../components/layout/header-hero/MainLayout";
+import Toaster from "../components/sections/ContactoFinal/Toastprovider";
 
 const geistSans = Space_Mono({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <MainLayout>
+            <Toaster />
             {children}
           </MainLayout>
         </ThemeProvider>
