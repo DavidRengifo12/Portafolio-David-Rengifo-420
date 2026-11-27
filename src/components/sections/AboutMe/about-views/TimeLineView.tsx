@@ -13,7 +13,7 @@ export const TimelineView: React.FC<TimelineViewProps> = ({ entries }) => {
         <div key={idx} className="relative">
           <span
             aria-hidden="true"
-            className="absolute -left-7.75 sm:-left-9.75 top-1.5 w-3 h-3 rounded-full bg-blue-600"
+            className="absolute -left-7.75 sm:-left-9.75 top-1.5 w-3 h-3 rounded-full bg-card-foreground"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-6">

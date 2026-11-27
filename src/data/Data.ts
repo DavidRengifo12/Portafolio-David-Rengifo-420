@@ -113,11 +113,20 @@ export const EXPERIENCE_DATA: TimelineEntry[] = [
   {
     period: '2024 - 2025',
     roleOrDegree: 'Desarrollador de Software en Formación',
-    organization: 'SENA - Análisis y Desarrollo de Software',
+    organization: 'SENA - Análisis y Desarrollo de Software, Participante SENASOFT-2025',
     description:
       'Desarrollo de sistemas de información, plataformas de votación electrónica, arquitectura de bases de datos y trabajo colaborativo bajo metodologías ágiles.',
     tags: ['PostgreSQL', 'APIs REST', 'UI/UX'],
   },
+
+  {
+  period: 'Octubre 20 a 24 del 2025',
+  roleOrDegree: 'Participante SENASOFT',
+  organization: 'SENA - Análisis y Desarrollo de Software | SENASOFT 2025',
+  description:
+    'Participación en el desarrollo de soluciones de software, construcción de interfaces web con React, consumo de APIs REST, gestión de información y trabajo colaborativo para el desarrollo de proyectos tecnológicos.',
+  tags: ['React', 'JavaScript', 'APIs REST', 'UI/UX', 'SupabaseJs'],
+},
 
 
 {
@@ -141,7 +150,7 @@ export const EXPERIENCE_DATA: TimelineEntry[] = [
     organization: 'Proyectos & Desarrollo de Software',
     description:
       'Diseño y construcción de aplicaciones web y móviles completas, plataformas de gestión y experiencias interactivas centradas en rendimiento y claridad.',
-    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js'],
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'AdonisJs', 'Flutter'],
   },
 
   

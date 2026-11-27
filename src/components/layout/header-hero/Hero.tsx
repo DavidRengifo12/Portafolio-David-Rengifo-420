@@ -29,7 +29,7 @@ export default function Hero() {
             <HeroMetadata />
 
             <motion.h4
-              className="text-xl text-foreground font-mono"
+              className="text-xl md:text-2xl text-foreground font-mono"
               variants={fadeUp}
             >
               Hi, Im David Rengifo
@@ -37,7 +37,7 @@ export default function Hero() {
 
             <motion.h1
               variants={fadeUp}
-              className="text-xl md:text-3xlfont-bold text-foreground font-mono"
+              className="text-xl md:text-3xl font-bold text-foreground font-mono"
             >
               IM A FULL-STACK DEVELOPER
               <span> AND MOBILE DEVELOPER </span>
@@ -45,7 +45,7 @@ export default function Hero() {
 
             <motion.p
               variants={fadeUp}
-              className="text-muted md:text-2xl font-mono"
+              className="text-foreground text-xl md:text-2xl font-mono"
             >
               NO SOLO CONSTRUYO SOLUCIONES, SIEMPRE BUSCO NUEVAS FORMAS DE HACERLAS MEJORES.
             </motion.p>
@@ -79,17 +79,17 @@ export default function Hero() {
             className="hidden md:flex items-center justify-center"
           > 
             <CardTerminal
-                command="David Santiago Rengifo :)"
-                messages={[
-              "Junior Full-Stack Developer",
-              "Building & Deploying",
-              "Web Applications",
-              "Mobile Development",
-              "Detail-Oriented Developer",
-              "Always Learning",
-              "Passionate about improving",
-              "urning ideas into solutions"
-            ]}
+              command="David Santiago Rengifo :)"
+              messages={[
+                "Desarrollador Full Stack Junior",
+                "Desarrollo de aplicaciones web",
+                "Desarrollo de aplicaciones móviles",
+                "Creación de soluciones digitales",
+                "Enfoque en código limpio",
+                "Aprendizaje constante",
+                "Apasionado por la tecnología",
+                "Transformando ideas en soluciones"
+              ]}
             />
           </motion.div>
 

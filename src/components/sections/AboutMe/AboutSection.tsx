@@ -8,23 +8,27 @@ import { AboutPanel } from './AboutPanel';
 import { ABOUT_TABS, AboutTabId, EDUCATION_DATA, EXPERIENCE_DATA } from '@/src/data/Data';
 import { WhoIsDavidView } from './about-views/WhoIsDavidView';
 import { TimelineView } from './about-views/TimeLineView';
-import { OutsideCodeView } from './about-views/OutsideCodeView';
-import { CurrentlyView } from './about-views/CurrentlyView';
 import { AvatarAccent } from './AvantarCenter';
 import { AboutFooterActions } from './AboutFooterActions';
+import { useRouter } from 'next/navigation';
+import CurrentlyView from './about-views/CurrentlyView';
+import OutsideCodeView from './about-views/OutsideCodeView';
 
 
 interface AboutSectionProps {
   avatarSrc?: string;
   cvUrl?: string;
-  onNavigateSection?: (sectionId: 'projects' | 'contact') => void;
+  onNavigateSection?: (sectionId: 'projects' | 'contactme') => void;
 }
 
 export const AboutSection: React.FC<AboutSectionProps> = ({
   avatarSrc = '/davids.png',
   cvUrl = '/CV-David.pdf',
-  onNavigateSection,
 }) => {
+
+  const router = useRouter()
+
+
   const [activeTab, setActiveTab] = useState<AboutTabId>('who-is-david');
 
   // Sincronización con query param/hash opcional para enlaces directos
@@ -59,9 +63,9 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
       case 'education':
         return <TimelineView entries={EDUCATION_DATA} />;
       case 'outside-code':
-        return <OutsideCodeView avatarSrc={avatarSrc} />;
+        return <OutsideCodeView  />;
       case 'currently':
-        return <CurrentlyView avatarSrc={avatarSrc} />;
+        return <CurrentlyView />;
     }
   };
 
@@ -97,8 +101,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
             footer={
               <AboutFooterActions
                 cvUrl={cvUrl}
-                onNavigateJourney={() => handleSelectTab('experience')}
-                onNavigateContact={() => onNavigateSection?.('contact')}
+                /*onNavigateJourney={() => handleSelectTab('experience')}*/
+                onNavigateContact={() => router.push('/contacme')}
               />
             }
           >

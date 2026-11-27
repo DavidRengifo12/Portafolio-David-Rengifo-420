@@ -47,7 +47,7 @@ export default function Header() {
               HeaderNavigation.map((item) => (
                 <li
                 key={item.label}
-                className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-gray-600 after:transition-all after:duration-300 hover:after:w-full"
+                className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-card-foreground after:transition-all after:duration-300 hover:after:w-full"
                 >
                   <Link
                   href={item.href}

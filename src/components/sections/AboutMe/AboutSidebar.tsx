@@ -39,7 +39,7 @@ export const AboutSidebar: React.FC<AboutSidebarProps> = ({
             className={`group relative flex items-center justify-between gap-3 px-4 py-3.5 sm:px-5 sm:py-4 rounded-2xl border text-left transition-all duration-300 shrink-0 lg:shrink cursor-pointer ${
               isActive
                 ? '  text-foreground'
-                : ' border border-border text-foreground hover:border-white/25 '
+                : ' border border-border text-foreground hover:border-border '
             }`}
           >
             <div className="flex items-center gap-3 min-w-0">
@@ -61,7 +61,7 @@ export const AboutSidebar: React.FC<AboutSidebarProps> = ({
             {isActive && (
               <span
                 aria-hidden="true"
-                className="w-2.5 h-2.5 rounded-full bg-blue-600 shadow-[0_0_10px_blue] shrink-0"
+                className="w-2.5 h-2.5 rounded-full bg-card-foreground shadow-[0_0_10px_blue] shrink-0"
               />
             )}
           </button>

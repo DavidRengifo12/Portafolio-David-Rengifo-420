@@ -100,12 +100,12 @@ const cardInfo = [
 
 export default function HabilidadesMe() {
   return (
-    <div className='flex flex-col justify-center items-center min-h-screen py-2 lg:py-20 pt-12'>
+    <div className='flex flex-col justify-center items-center min-h-screen py-2 lg:py-24 pt-20'>
         <div className="mx-auto max-w-5xl px-6">
 
           <div className="flex flex-col items-center text-center mb-2 md:mb-6">
 
-            <span className="text-xs md:text-sm font-mono tracking-[0.25em] text-blue-600 mb-4">
+            <span className="text-xs md:text-sm font-mono tracking-[0.25em] text-foreground mb-4">
               MY TECH STACK
             </span>
 
@@ -114,7 +114,7 @@ export default function HabilidadesMe() {
               HABILIDADES QUE POSEO
             </h1>
 
-            <div className="w-16 h-1 bg-blue-600 rounded-full my-5" />
+            <div className="w-16 h-1 bg-card-foreground rounded-full my-5" />
 
             <p className="max-w-2xl text-sm sm:text-base
               leading-7 text-muted-foreground font-mono">
@@ -155,16 +155,16 @@ export default function HabilidadesMe() {
             </div>
 
             <div className="hidden sm:flex justify-center w-full">
-                <CardTerminal 
-                command="$ cat developer-philosophy.txt"
-                messages={[
-                'Leadership: I believe in leading by example.',
-                'Teamwork: Great solutions are built together.',
-                'Curiosity: I ask, learn and investigate.',
-                'Problem solving: Every challenge has a solution.',
-                'Quality: I never settle for mediocre results.',
-                ]}
-            />
+                <CardTerminal
+                  command="$ cat filosfia-desarrollador.txt"
+                  messages={[
+                    'Liderazgo: Tomo la iniciativa.',
+                    'Trabajo en equipo: Aprendo y colaboro.',
+                    'Curiosidad: Siempre busco aprender.',
+                    'Resolución: Encuentro soluciones prácticas.',
+                    'Calidad: Me enfoco en código limpio.',
+                  ]}
+                />
             </div>
         </div>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Dumbbell, Trophy, BookOpen, Gamepad2 } from 'lucide-react';
 import { HOBBIES_DATA, HobbyItem } from '@/src/data/Data';
-import { AvatarAccent } from '../AvantarCenter';
+
 
 
 const HOBBY_ICONS: Record<HobbyItem['iconName'], React.ReactNode> = {
@@ -11,14 +11,14 @@ const HOBBY_ICONS: Record<HobbyItem['iconName'], React.ReactNode> = {
   gamepad: <Gamepad2 className="w-6 h-6 text-foreground" />,
 };
 
-export const OutsideCodeView: React.FC<{ avatarSrc?: string }> = ({ avatarSrc }) => {
+export default function OutsideCodeView() {
   return (
     <div className="space-y-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {HOBBIES_DATA.map((hobby) => (
           <div
             key={hobby.id}
-            className="rounded-2xl bg-card border border-border hover:border-blue-600 p-5 transition-colors"
+            className="rounded-2xl bg-card border border-border hover:border-gray-400 p-5 transition-colors"
           >
             <div className="w-11 h-11 rounded-xl  border border-border flex items-center justify-center mb-4">
               {HOBBY_ICONS[hobby.iconName]}
@@ -32,7 +32,7 @@ export const OutsideCodeView: React.FC<{ avatarSrc?: string }> = ({ avatarSrc })
       </div>
 
       <div className="flex justify-end">
-        <AvatarAccent src={avatarSrc} variant="bottom-right" />
+        
       </div>
     </div>
   );

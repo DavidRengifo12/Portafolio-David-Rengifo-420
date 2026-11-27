@@ -37,9 +37,9 @@ export default function ContactoFinal() {
            <Contacto />
           </div>
 
-          <div className="flex flex-col justify-center gap-4 w-full">
-            <h2>Conectemos</h2>
-            <p>Tambien puedes contactarme en estas plataformas</p>
+          <div className="flex flex-col justify-center gap-4 w-full text-foreground font-mono">
+            <h2 className="text-xl md:text-3xl">Conectemos</h2>
+            <p className="text-xl">Tambien puedes contactarme en estas plataformas</p>
           
             <ol className="flex flex-col gap-8 ">
             {
@@ -52,18 +52,18 @@ export default function ContactoFinal() {
                     target={items.id === 3 ? undefined : "_blank"}
                     rel="noopener noreferrer"
                     aria-label={`Visitar ${items.id}`}
-                    className="group flex items-center gap-4 p-3 rounded-xl border border-border hover:border-blue-600 transition-all duration-300"
+                    className="group flex items-center gap-4 p-3 rounded-xl border border-border hover:border-gray-400 transition-all duration-300"
                 >
-                    <div className="flex items-center justify-center size-11 rounded-lg bg-muted text-foreground group-hover:text-blue-500 transition-colors">
+                    <div className="flex items-center justify-center size-11 rounded-lg bg-card text-foreground  transition-colors">
                     <Icon size={22} />
                     </div>
 
                     <div className="flex flex-col">
-                    <span className="font-semibold text-sm text-foreground">
+                    <span className="font-semibold text-sm text-foreground font-mono">
                             {items.name}
                         </span>
 
-                    <span className="text-xs text-muted-foreground">
+                    <span className="text-xs text-foreground font-mono">
                         {items.description}
                     </span>
                     </div>

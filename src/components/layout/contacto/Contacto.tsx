@@ -58,11 +58,11 @@ export default function Contacto() {
       <header className="flex flex-col gap-2">
 
         <span className="group flex items-center gap-4">
-          <div className="w-18 h-1 bg-blue-400 rounded-full my-5" />
+          <div className="w-18 h-1 bg-card-foreground rounded-full my-5" />
           <p className="font-mono text-2xl">Ponte en contacto</p>
         </span>
 
-        <h2 className="text-3xl font-bold font-mono text-foreground">
+        <h2 className="text-2xl font-bold font-mono text-foreground">
           Vamos a construir algo juntos
         </h2>
 
@@ -95,7 +95,7 @@ export default function Contacto() {
 
           {/* Nombre */}
           <FormField
-            label="name"
+            label="Nombre y Apellido"
             placeholder="Ingresa tu nombre"
             {
               ...register("name")
@@ -112,7 +112,7 @@ export default function Contacto() {
 
           {/* Correo electrónico */}
           <FormField
-            label="email"
+            label="Correo Electronico"
             
             type="email"
             placeholder="Ingresa tu correo"
@@ -131,7 +131,7 @@ export default function Contacto() {
           <div className="flex flex-col gap-2 text-foreground">
 
             <label htmlFor="subject" className="font-mono">
-              Asunto
+              Descripcion de lo que quieres hacer
             </label>
 
             <textarea
@@ -153,7 +153,7 @@ export default function Contacto() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="rounded-xl bg-button border p-4 font-mono text-foreground transition hover:bg-white/20 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="rounded-xl bg-button border p-4 font-mono text-foreground transition hover:bg-button-hover disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? "Enviando..." : "Enviar mensaje"}
           </button>

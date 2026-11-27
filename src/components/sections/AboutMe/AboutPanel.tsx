@@ -27,8 +27,8 @@ export const AboutPanel: React.FC<AboutPanelProps> = ({
       <div className="relative z-10 flex items-start justify-between gap-4">
         <div className="max-w-2xl">
           <div className="flex items-center gap-3 mb-3">
-            <span className="h-1 w-8 bg-blue-600 rounded-full" />
-            <span className="text-xs font-semibold tracking-[0.2em] font-mono uppercase text-blue-600 t">
+            <span className="h-1 w-8 bg-card-foreground rounded-full" />
+            <span className="text-xs font-semibold tracking-[0.2em] font-mono uppercase text-foreground ">
               {meta.eyebrow}
             </span>
           </div>

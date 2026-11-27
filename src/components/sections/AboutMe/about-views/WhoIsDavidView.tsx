@@ -4,10 +4,10 @@ import { WHO_IS_DAVID_DATA } from '@/src/data/Data';
 import { AvatarAccent } from '../AvantarCenter';
 
 const PILL_ICONS = [
-  <Layout key="fe" className="w-4 h-4 text-blue-600" />,
-  <Server key="be" className="w-4 h-4  text-blue-600" />,
-  <Code2 key="ui" className="w-4 h-4  text-blue-600" />,
-  <Cpu key="ps" className="w-4 h-4  text-blue-600" />,
+  <Layout key="fe" className="w-4 h-4 text-foreground" />,
+  <Server key="be" className="w-4 h-4  text-foreground" />,
+  <Code2 key="ui" className="w-4 h-4  text-foreground" />,
+  <Cpu key="ps" className="w-4 h-4  text-foreground" />,
 ];
 
 export const WhoIsDavidView: React.FC<{ avatarSrc?: string }> = ({  }) => {
@@ -33,7 +33,7 @@ export const WhoIsDavidView: React.FC<{ avatarSrc?: string }> = ({  }) => {
             <li key={index} className="relative text-sm sm:text-base text-foreground leading-relaxed">
               <span
                 aria-hidden="true"
-                className="absolute -left-5.25 sm:-left-6.25 top-2 w-2.5 h-2.5 rounded-full bg-blue-600"
+                className="absolute -left-5.25 sm:-left-6.25 top-2 w-2.5 h-2.5 rounded-full bg-card-foreground"
               />
               {text}
             </li>
